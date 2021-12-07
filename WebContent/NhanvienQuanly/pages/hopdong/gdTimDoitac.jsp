@@ -68,7 +68,7 @@
 		<!-- partial -->
 		<div class="container-fluid page-body-wrapper">
 			<!-- partial:../../partials/_sidebar.html -->
-			<nav class="sidebar sidebar-offcanvas" id="sidebar">
+			<nav class="sidebar sidebar-offcanvas" id="sidebar"  style="background: #fff;">
 				<ul class="nav">
 					<li class="nav-item"><a class="nav-link"
 						href="../../gdChinhNVQL.jsp"> <i class="ti-shield menu-icon"></i>
@@ -90,7 +90,6 @@
 							</ul>
 						</div>
 					</li>
-
 				</ul>
 			</nav>
 			<!-- partial -->
@@ -100,7 +99,16 @@
 						<div class="col-lg-12 grid-margin stretch-card">
 							<div class="card">
 								<div class="card-body">
-									<h4 class="card-title">Tìm kiếm đối tác theo kiểu xe</h4>
+									<div class="row">
+										<div class="col-8">
+											<h4 class="card-title">Tìm kiếm đối tác theo kiểu xe</h4>
+										</div>
+										<div class="col-4">
+											<div style="display: flex; justify-content: space-evenly;">
+												<button type="button" class="btn btn-danger" onclick="openPage('../../gdChinhNVQL.jsp')">Quay lại trang chủ</button>
+											</div>
+										</div>
+									</div>
 									<p class="card-description"></p>
 									<form action="doTim.jsp" method="post">
 										<div class="form-group" style="margin: 20px 0px;">
@@ -208,6 +216,12 @@
 	<script src="../../js/hoverable-collapse.js"></script>
 	<script src="../../js/template.js"></script>
 	<script src="../../js/todolist.js"></script>
+	<script type="text/javascript">
+	 function openPage(pageURL)
+	 {
+		 window.location.href = pageURL;
+	 }
+	</script>
 	<!-- endinject -->
 	<!-- Custom js for this page-->
 	<!-- End custom js for this page-->
